@@ -22,7 +22,12 @@
 
             Console.WriteLine(dial.Options["West, my friend"].Text + "\n");
 
-           
+            Console.WriteLine(dial.Options["East, dumbass"].Text + "\n");
+
+            foreach (var option in dial.Options["East, dumbass"].Options)
+            {
+                Console.WriteLine(option.Key);
+            }
         }
     }
 }
